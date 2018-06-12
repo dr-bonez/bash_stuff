@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "alias '$*'" >> ~/.bash_aliases
+. ~/.bash_aliases

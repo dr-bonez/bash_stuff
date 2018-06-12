@@ -1,0 +1,12 @@
+#!/bin/bash
+
+numre='[0-9._]+$'
+if ! [[ "$1" =~ $numre ]]; then
+    echo "0"
+    exit
+fi
+if ! [[ "$2" =~ $numre ]]; then
+    echo "$1"
+    exit
+fi
+echo "$1 $2 * p" | dc 

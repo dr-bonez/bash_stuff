@@ -1,0 +1,12 @@
+#!/bin/bash
+
+newpath="${PATH%:*}"
+removedpath="${PATH##*:}"
+echo -n "Remove '$removedpath'?[y/N] "
+read yn
+
+if [ "$yn" == 'y' ] || [ "$yn" == 'Y' ]; then
+	export PATH="$newpath"
+	echo "\$PATH: $PATH"
+	echo "export PATH=\"$PATH\"" > ~/.bash_path
+fi

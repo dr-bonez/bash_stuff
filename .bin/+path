@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DIR="$( cd "$*" && pwd )"
+
+export PATH="$PATH:$DIR"
+echo "\$PATH: $PATH"
+echo "export PATH=\"$PATH\"" > ~/.bash_path
