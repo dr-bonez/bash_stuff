@@ -70,8 +70,6 @@ xterm*|rxvt*)
 esac
 
 # enable color support of ls and also add handy aliases
-eval $(gdircolors ~/.dircolors/dircolors.256dark)
-alias ls='gls --color=auto'
 #alias dir='dir --color=auto'
 #alias vdir='vdir --color=auto'
 
@@ -107,6 +105,10 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+##
+# Your previous /Users/amcclelland/.bash_profile file was backed up as /Users/amcclelland/.bash_profile.macports-saved_2018-03-28_at_09:51:28
+##
 
 if [ -f ~/.bash_path ]; then
     . ~/.bash_path
