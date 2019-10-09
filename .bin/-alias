@@ -1,0 +1,11 @@
+#!/bin/bash
+
+sed -n "/$*/p" ~/.bash_aliases
+echo -n "remove?[y/N] "
+read yn
+
+if [ "$yn" == 'y' ] || [ "$yn" == 'Y' ]; then
+  sed -i '' "/$*/d" ~/.bash_aliases
+  unalias -a
+  source ~/.bash_profile
+fi
