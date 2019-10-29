@@ -70,6 +70,7 @@ xterm*|rxvt*)
 esac
 
 # enable color support of ls and also add handy aliases
+eval $(dircolors ~/.dircolors/dircolors.256dark)
 #alias dir='dir --color=auto'
 #alias vdir='vdir --color=auto'
 
@@ -78,6 +79,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
 # some more ls aliases
+alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -113,3 +115,5 @@ fi
 if [ -f ~/.bash_path ]; then
     . ~/.bash_path
 fi
+
+export GPG_TTY=$(tty)

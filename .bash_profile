@@ -111,3 +111,5 @@ fi
 if [ -f ~/.bash_path ]; then
     . ~/.bash_path
 fi
+
+export GPG_TTY=$(tty)
