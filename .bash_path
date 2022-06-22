@@ -1,1 +1,1 @@
-export PATH="/opt/local/bin:/opt/local/sbin:~/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin"
+export PATH="/home/drbonez/.nvm/versions/node/v16.15.1/bin:/home/drbonez/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/drbonez/.bin"
